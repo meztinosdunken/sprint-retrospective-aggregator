@@ -17,6 +17,6 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  "author": "Updated Author Name", // Updated author name to reflect current maintainer
+  "author": "Current Maintainer Name", // Updated author name to reflect current maintainer
   "license": "MIT"
 }
