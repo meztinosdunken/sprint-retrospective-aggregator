@@ -10,6 +10,12 @@ app.use(cors());
 // Parse incoming JSON requests
 app.use(bodyParser.json());
 
+// Middleware to log incoming requests
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.path}`);
+    next();
+});
+
 app.get('/', (req, res) => {
     res.send('Welcome to the Sprint Retrospective Aggregator!');
 });
